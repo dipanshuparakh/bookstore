@@ -1,0 +1,9 @@
+{% extends "readandpick/book_list.html" %}
+
+{% block title %}{{ owner.username }}'s books{% endblock %}
+
+{% block heading %}
+  <h2>{{ owner.username }}'s books<br>
+    <small>{{ books.count }} books in total</small>
+  </h2>
+{% endblock %}

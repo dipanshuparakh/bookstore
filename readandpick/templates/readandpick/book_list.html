@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Latest books{% endblock %}
+
+{% block heading %}
+  <h2>Latest books</h2>
+{% endblock %}
+
+{% block content %}
+  <ul class="list-unstyled" style="background-color:powderblue;">
+  {% for book in books %}
+    <li class="well well-sm">{% include "readandpick/book.html" %}</li>
+  {% empty %}
+    <li>No books. :(</li>
+  {% endfor %}
+  </ul>
+{% endblock %}

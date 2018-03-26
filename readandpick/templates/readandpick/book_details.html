@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}{{ book.title }}{% endblock %}
+
+{% block heading %}
+  <h2>{{book.title}}</h2>
+  <img src="/static/cover_images/{{ book.image_name }}"  height="250" width="200" />
+{% endblock %}
+
+{% block content %}
+  
+{% if book.description %}
+  <br>{{ book.description }}
+{% endif %}
+ 
+    
+  
+{% endblock %}

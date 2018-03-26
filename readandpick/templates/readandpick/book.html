@@ -1,0 +1,11 @@
+<div class="row">
+<div class="col-md-1"><img src="/static/cover_images/{{ book.image_name }}" height="90" width="70" /> </div>
+<a class="lead" href="{{ book.id }}">{{ book.title }}</a>
+<span style="color : green">{% if book.price %}
+  <br>Price : Rs.{{ book.price }}
+{% endif %}</span>
+</div>
+
+
+
+
